@@ -18,7 +18,7 @@
                 <nav class="header-section">
                     <span class="logo"><a href="./index.html" class="logo-link"><span class="web">Web</span><span class="studio">Studio</span></a></span>
                     <ul class="nav-links">
-                        <li class="nav-item"> <a href="./index.html" class="nav-link studio-link"> Студия</a></li>
+                        <li class="nav-item"> <a href="./index.html" class="nav-link current"> Студия</a></li>
                         <li class="nav-item"> <a href="./portfolio.html" class="nav-link"> Портфолио</a></li>
                         <li class="nav-item"> <a href="" class="nav-link"> Контакты</a></li>
                     </ul>
@@ -46,11 +46,11 @@
             
             <section class="business section">
                 <div class="container">
-
+                    <div class="modal-window"></div>
                     <h1 class="business-solution">ЭФФЕКТИВНЫЕ РЕШЕНИЯ <br> ДЛЯ ВАШЕГО БИЗНЕСА</h1>
                     
                     <div class="business-button-container">
-                        <button type="button" class="business-button">Заказать услугу</button>
+                        <button data-modal-open type="button" class="business-button">Заказать услугу</button>
                     </div>
                 </div>
             </section>
@@ -378,6 +378,15 @@
                 </div>
             </div>
         </footer>
+            <div class="modal is-hidden" id="modal" data-modal>
+                <div class="modal-content" id="modal-content"></div>
+                <button data-modal-close type="button" class="modal-button">
+                    <svg class="svg-cross">
+                        <use href="./images/icons/icons.svg#icon-close-black-cross"></use> 
+                    </svg>
+                </button>
+            </div>
+        <script src="./js/modal.js" type="module"></script>
      </body>
 </html>
 
